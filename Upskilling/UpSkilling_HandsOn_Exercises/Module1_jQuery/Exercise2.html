@@ -1,0 +1,38 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <title>jQuery Selectors Exercise</title> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
+    <style> 
+        body { font-family: Arial, sans-serif; margin: 20px; } 
+        button { margin-top: 10px; padding: 5px 10px; cursor: pointer; } 
+        .target-p { background-color: #f0f0f0; padding: 5px; } 
+    </style> 
+</head> 
+<body> 
+ 
+    <h1 id="main-header">Original Header Text</h1> 
+     
+    <p class="target-p">Paragraph 1: This paragraph will disappear when you click the button.</p> 
+    <p>Paragraph 2: This paragraph will stay visible.</p> 
+     
+    <button id="hide-btn">Click to Hide Paragraph 1</button> 
+ 
+    <script> 
+        // Ensure the DOM structure is fully loaded before running script 
+        $(document).ready(function() { 
+             
+            // 1. Change the text of the <h1> element using ID selector 
+            $("#main-header").text("The Header Text Has Been Changed!"); 
+ 
+            // 2. Hide one specific paragraph when the button is clicked 
+            $("#hide-btn").click(function() { 
+                // Selecting by class name to target only the first paragraph 
+                $(".target-p").hide(); 
+            }); 
+ 
+        }); 
+    </script> 
+</body> 
+</html> 

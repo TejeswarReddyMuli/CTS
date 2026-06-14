@@ -1,0 +1,84 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <title>jQuery Methods Exercise</title> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
+    <style> 
+        body { font-family: Arial, sans-serif; margin: 20px; } 
+        .box-container { display: flex; gap: 15px; margin-bottom: 20px; } 
+         
+        /* 3 div elements with class .box */ 
+        .box {  
+            width: 100px;  
+            height: 100px;  
+            background-color: #3498db;  
+            color: white;  
+            display: flex;  
+            align-items: center;  
+            justify-content: center;  
+            font-weight: bold;  
+            border-radius: 8px;  
+        } 
+         
+        .controls { display: flex; gap: 8px; flex-wrap: wrap; } 
+        button { padding: 8px 12px; font-weight: bold; cursor: pointer; } 
+        .bonus-btn { background-color: #2ecc71; color: white; border: none; border-radius: 4px; } 
+    </style> 
+</head> 
+<body> 
+ 
+    <div class="box-container"> 
+        <div class="box">Box 1</div> 
+        <div class="box">Box 2</div> 
+        <div class="box">Box 3</div> 
+    </div> 
+ 
+    <div class="controls"> 
+        <button id="btn-hide">.hide()</button> 
+        <button id="btn-show">.show()</button> 
+        <button id="btn-fadeout">.fadeOut()</button> 
+        <button id="btn-fadein">.fadeIn()</button> 
+        <button id="btn-toggle">.toggle()</button> 
+         
+        <button id="btn-bonus" class="bonus-btn">Trigger Chain (.slideUp...)</button> 
+    </div> 
+ 
+    <script> 
+        $(document).ready(function() { 
+             
+            // 1. Hide boxes instantly 
+            $("#btn-hide").click(function() { 
+                $(".box").hide(); 
+            }); 
+ 
+            // 2. Show boxes instantly 
+            $("#btn-show").click(function() { 
+                $(".box").show(); 
+            }); 
+ 
+            // 3. Smoothly fade out boxes over 800ms 
+            $("#btn-fadeout").click(function() { 
+                $(".box").fadeOut(800); 
+            }); 
+ 
+            // 4. Smoothly fade back in over 800ms 
+            $("#btn-fadein").click(function() { 
+                $(".box").fadeIn(800); 
+            }); 
+ 
+            // 5. Toggle visibility status (alternates hide/show) 
+            $("#btn-toggle").click(function() { 
+                $(".box").toggle(400); 
+            }); 
+ 
+            // Bonus: Method Chaining 
+            // Slides the boxes away, waits for 1 second (1000ms), then slides them back down 
+            $("#btn-bonus").click(function() { 
+                $(".box").slideUp(500).delay(1000).slideDown(500); 
+            }); 
+ 
+        }); 
+    </script> 
+</body> 
+</html>

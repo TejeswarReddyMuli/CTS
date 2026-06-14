@@ -1,0 +1,8 @@
+/* Event Card Styles */
+
+.eventCard{
+    border:1px solid black;
+    padding:15px;
+    background-color:white;
+    width:250px;
+}

@@ -1,0 +1,14 @@
+C:\Users\dell\OneDrive\Desktop\Up_Skilling\CSharpExercises\Exercise04\bin\Debug\net10.0\Exercise04.exe
+C:\Users\dell\OneDrive\Desktop\Up_Skilling\CSharpExercises\Exercise04\bin\Debug\net10.0\Exercise04.deps.json
+C:\Users\dell\OneDrive\Desktop\Up_Skilling\CSharpExercises\Exercise04\bin\Debug\net10.0\Exercise04.runtimeconfig.json
+C:\Users\dell\OneDrive\Desktop\Up_Skilling\CSharpExercises\Exercise04\bin\Debug\net10.0\Exercise04.dll
+C:\Users\dell\OneDrive\Desktop\Up_Skilling\CSharpExercises\Exercise04\bin\Debug\net10.0\Exercise04.pdb
+C:\Users\dell\OneDrive\Desktop\Up_Skilling\CSharpExercises\Exercise04\obj\Debug\net10.0\Exercise04.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dell\OneDrive\Desktop\Up_Skilling\CSharpExercises\Exercise04\obj\Debug\net10.0\Exercise04.AssemblyInfoInputs.cache
+C:\Users\dell\OneDrive\Desktop\Up_Skilling\CSharpExercises\Exercise04\obj\Debug\net10.0\Exercise04.AssemblyInfo.cs
+C:\Users\dell\OneDrive\Desktop\Up_Skilling\CSharpExercises\Exercise04\obj\Debug\net10.0\Exercise04.csproj.CoreCompileInputs.cache
+C:\Users\dell\OneDrive\Desktop\Up_Skilling\CSharpExercises\Exercise04\obj\Debug\net10.0\Exercise04.dll
+C:\Users\dell\OneDrive\Desktop\Up_Skilling\CSharpExercises\Exercise04\obj\Debug\net10.0\refint\Exercise04.dll
+C:\Users\dell\OneDrive\Desktop\Up_Skilling\CSharpExercises\Exercise04\obj\Debug\net10.0\Exercise04.pdb
+C:\Users\dell\OneDrive\Desktop\Up_Skilling\CSharpExercises\Exercise04\obj\Debug\net10.0\Exercise04.genruntimeconfig.cache
+C:\Users\dell\OneDrive\Desktop\Up_Skilling\CSharpExercises\Exercise04\obj\Debug\net10.0\ref\Exercise04.dll

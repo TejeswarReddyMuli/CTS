@@ -1,0 +1,83 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <title>jQuery Event Helpers Exercise</title> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
+    <style> 
+        body { font-family: Arial, sans-serif; margin: 30px; line-height: 1.6; } 
+         
+        /* Stylized paragraph box */ 
+        #interactive-text { 
+            padding: 20px; 
+            background-color: #f5f6fa; 
+            border: 2px dashed #7f8c8d; 
+            border-radius: 8px; 
+            font-size: 18px; 
+            text-align: center; 
+            cursor: pointer; 
+            user-select: none; /* Prevents text highlighting on double click */ 
+            transition: all 0.2s ease; 
+            margin-bottom: 20px; 
+        } 
+ 
+        .input-group { margin-top: 20px; } 
+        input { padding: 8px; width: 250px; font-size: 14px; } 
+        #key-log { color: #e74c3c; font-weight: bold; margin-left: 10px; } 
+    </style> 
+</head> 
+<body> 
+ 
+    <p id="interactive-text"> 
+        Hover over me, click me, or double-click me! 
+    </p> 
+ 
+    <div class="input-group"> 
+        <label for="text-input">Type something here: </label> 
+        <input type="text" id="text-input" placeholder="Press keys to trigger .keypress()..."> 
+        <span id="key-log"></span> 
+    </div> 
+ 
+    <script> 
+        $(document).ready(function() { 
+            var $textBox = $("#interactive-text"); 
+ 
+            // 1. .mouseenter() - Triggers when mouse hovers inside 
+            $textBox.mouseenter(function() { 
+                $(this).css({ 
+                    "background-color": "#ffeaa7", 
+                    "border-color": "#fdcb6e" 
+                }).text("Mouse entered the zone!"); 
+            }); 
+ 
+            // 2. .mouseleave() - Triggers when mouse moves away 
+            $textBox.mouseleave(function() { 
+                $(this).css({ 
+                    "background-color": "#f5f6fa", 
+                    "border-color": "#7f8c8d" 
+                }).text("Hover over me, click me, or double-click me!"); 
+            }); 
+ 
+            // 3. .click() - Triggers on a single left-click 
+            $textBox.click(function() { 
+                $(this).css("background-color": "#9b59b6") 
+                       .text("   Single Click Detected!   "); 
+            }); 
+ 
+            // 4. .dblclick() - Triggers on a rapid double-click 
+            $textBox.dblclick(function() { 
+                $(this).css("background-color": "#2ecc71") 
+                       .text("              Double Click Registered!              "); 
+            }); 
+ 
+            // 5. .keypress() - Triggers when a character key is pressed inside the input 
+            $("#text-input").keypress(function(event) { 
+                // event.key gets the actual letter or symbol typed 
+                $("#key-log").text("Last key pressed: '" + event.key + "'").fadeIn(100).fadeOut(800); 
+            }); 
+ 
+        }); 
+    </script> 
+ 
+</body> 
+</html> 

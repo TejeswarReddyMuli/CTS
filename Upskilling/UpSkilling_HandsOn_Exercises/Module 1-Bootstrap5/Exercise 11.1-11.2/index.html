@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 11: Cards & Media Objects</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+    <div class="container my-5">
+
+        <header class="text-center mb-5">
+            <h1 class="display-5 fw-bold">
+                Exercise 11: Cards & Media Objects
+            </h1>
+
+            <p class="text-muted">
+                Building rich content containers and component-aligned layouts.
+            </p>
+
+            <hr>
+        </header>
+
+        <div class="row g-5">
+
+            <!-- Exercise 11.1 -->
+
+            <div class="col-md-5">
+
+                <h2 class="h4 mb-3 text-secondary">
+                    Exercise 11.1: Profile Card
+                </h2>
+
+                <div class="card shadow-sm" style="max-width:18rem;">
+
+                    <img
+                        src="https://via.placeholder.com/300x200/0d6efd/ffffff?text=Profile+Photo"
+                        class="card-img-top"
+                        alt="User Profile Image">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">
+                            Alex Morgan
+                        </h5>
+
+                        <h6 class="card-subtitle mb-2 text-muted">
+                            AI Engineer
+                        </h6>
+
+                        <p class="card-text">
+                            Passionate about training deep learning models,
+                            optimizing neural networks, and developing
+                            computer vision solutions.
+                        </p>
+
+                        <a href="#" class="btn btn-primary btn-sm">
+                            View Portfolio
+                        </a>
+
+                        <a href="#" class="btn btn-outline-secondary btn-sm">
+                            Contact
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Exercise 11.2 -->
+
+            <div class="col-md-7">
+
+                <h2 class="h4 mb-3 text-secondary">
+                    Exercise 11.2: Media Object Layout
+                </h2>
+
+                <p class="small text-muted">
+                    Left-aligned image with text flowing smoothly alongside it.
+                </p>
+
+                <div class="p-4 bg-white border rounded shadow-sm">
+
+                    <div class="d-flex align-items-start">
+
+                        <div class="flex-shrink-0">
+
+                            <img
+                                src="https://via.placeholder.com/64/198754/ffffff?text=Icon"
+                                class="rounded me-3"
+                                alt="Media Asset Thumbnail">
+
+                        </div>
+
+                        <div class="flex-grow-1">
+
+                            <h5 class="mt-0 fw-bold">
+                                Nested System Notification
+                            </h5>
+
+                            <p class="mb-1 text-secondary">
+                                The latest package updates have been
+                                successfully pushed to the main branch
+                                workspace. All unit diagnostics passed
+                                initialization tests without reporting
+                                exceptions.
+                            </p>
+
+                            <small class="text-black-50">
+                                Received 3 minutes ago via GitHub Webhook
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

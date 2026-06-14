@@ -1,0 +1,21 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <title>jQuery CDN Example</title> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
+</head> 
+<body> 
+ 
+    <h1 id="message">Hello World!</h1> 
+ 
+    <script> 
+        // Bonus: Wait for the document to fully load, then log the text using jQuery 
+        $(document).ready(function() { 
+            var text = $("#message").text(); 
+            console.log("jQuery CDN Log:", text); 
+        }); 
+    </script> 
+ 
+</body> 
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+form{
+    width:400px;
+    border:1px solid gray;
+    padding:20px;
+}
+</style>
+
+<script>
+function showMessage(){
+    document.getElementById("result").value =
+    "Registration Successful!";
+}
+</script>
+
+</head>
+<body>
+
+<form onsubmit="showMessage(); return false;">
+    
+    <input type="text"
+           placeholder="Enter Name"
+           required
+           autofocus><br><br>
+
+    <input type="email"
+           placeholder="Enter Email"
+           required><br><br>
+
+    <input type="date" required><br><br>
+
+    <select required>
+        <option>Music</option>
+        <option>Sports</option>
+        <option>Food Festival</option>
+    </select><br><br>
+
+    <textarea placeholder="Message"></textarea><br><br>
+
+    <button type="submit">Register</button>
+
+    <br><br>
+
+    <output id="result"></output>
+
+</form>
+
+</body>
+</html>
